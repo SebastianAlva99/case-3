@@ -49,7 +49,7 @@ linkForm.addEventListener('submit', function(e) {
     });
 
     const deleteLänk = document.createElement("button");
-    deleteLänk.textContent = "Radera";
+    deleteLänk.innerHTML = '<i class="fas fa-trash"></i>';
     deleteLänk.addEventListener("click", function(){
     li.remove();
     });
