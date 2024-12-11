@@ -33,15 +33,19 @@ linkForm.addEventListener('submit', function(e) {
     const action = document.createElement("div");
     action.className = "action";
 
-
-    const favoriteButton = document.createElement('button');
-
-    
-    favoriteButton.textContent = "Favorite";
+    const favoriteButton = document.createElement("button");
+    favoriteButton.innerHTML = '<i class="far fa-heart"></i>';
 
     favoriteButton.addEventListener("click", function(){
-        li.classList.toggle("favorite")
-
+        li.classList.toggle("favorite");
+        const icon = favoriteButton.querySelector('i');
+        if(li.classList.contains("favorite")){
+            icon.classList.remove('far');
+            icon.classList.add('fas');
+        }else {
+            icon.classList.remove('fas');
+            icon.classList.add('far')
+        }
     });
 
     const deleteLänk = document.createElement("button");
