@@ -61,7 +61,7 @@ button{
     transition: .4s;
 }
 button:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* ---- BODY ---- */
