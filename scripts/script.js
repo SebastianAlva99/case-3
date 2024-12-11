@@ -20,5 +20,24 @@ linkForm.addEventListener('submit', function(e) {
     favoriteButton.textContent = "favorite";
     favoriteButton.addEventListener("click", function(){
         li.classList.toggle("favorite")
-    })
-})
+    });
+
+    const deleteLänk = document.createElement("button");
+    deleteLänk.textContent = "Radera";
+    deleteLänk.addEventListener("click", function(){
+    li.remove();
+    });
+
+    action.appendChild(favoriteButton);
+    action.appendChild(deleteLänk);
+
+    li.appendChild(a);
+    li.appendChild(action);
+
+    linkList.appendChild(li);
+
+    linkForm.reset();
+});
+
+
+
