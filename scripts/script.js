@@ -35,9 +35,13 @@ linkForm.addEventListener('submit', function(e) {
 
 
     const favoriteButton = document.createElement('button');
+
+    
     favoriteButton.textContent = "Favorite";
+
     favoriteButton.addEventListener("click", function(){
         li.classList.toggle("favorite")
+
     });
 
     const deleteLänk = document.createElement("button");

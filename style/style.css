@@ -240,13 +240,13 @@ li div.action{
 
 .image-container img {
     flex: 1;
-    max-width: 150px;
-    height: 200px;
-    
+
 }
 
 img {
-    margin-left: 95px;
+    width: 500px;
+    height: 300px;
+    margin-left: 125px;
     padding: 8px;
     border: 1px solid #000000;
     border-radius: 8px;
