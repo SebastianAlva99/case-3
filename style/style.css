@@ -164,3 +164,11 @@ ul .links li {
     border-radius: 4px;
     background-color: #fafafa;
 }
+
+.favorite {
+    background-color: #ffeaa7;
+}
+
+.actions button {
+    margin-left: 0.5rem;
+}

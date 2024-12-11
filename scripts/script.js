@@ -9,4 +9,16 @@ linkForm.addEventListener('submit', function(e) {
 
     const li = document.createElement("li");
     const a = document.createElement("a");
+    a.href = linkURL;
+    a.textContent = linkText;
+    a.target ="_blank";
+
+    const action = document.createElement("div");
+    action.className = "action";
+
+    const favoriteButton = document.createElement('button');
+    favoriteButton.textContent = "favorite";
+    favoriteButton.addEventListener("click", function(){
+        li.classList.toggle("favorite")
+    })
 })
