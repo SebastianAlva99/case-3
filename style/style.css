@@ -109,6 +109,8 @@ main {
 .main_länks{
     max-width: 800px;
     margin: 2em;
+    margin-top: 150px;
+    margin-left: 570px;
     padding: 1rem;
     background: rgb(189, 182, 182);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
@@ -123,6 +125,7 @@ h1 {
 
 form {
     display: flex;
+    align-items: center;
     gap: 0.5rem;
     margin-bottom: 1rem;
 }
@@ -165,10 +168,29 @@ ul .links li {
     background-color: #fafafa;
 }
 
+
 .favorite {
-    background-color: #ffeaa7;
+    border-left: 4px solid #f39c12;
+    
 }
 
-.actions button {
-    margin-left: 0.5rem;
+li a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: black;
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    margin-left: 14%;
+
+}
+
+li a:hover{
+    text-decoration: underline;
+}
+
+li div.action{
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
 }

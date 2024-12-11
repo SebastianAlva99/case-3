@@ -17,7 +17,7 @@ linkForm.addEventListener('submit', function(e) {
     action.className = "action";
 
     const favoriteButton = document.createElement('button');
-    favoriteButton.textContent = "favorite";
+    favoriteButton.textContent = "Favorite";
     favoriteButton.addEventListener("click", function(){
         li.classList.toggle("favorite")
     });
