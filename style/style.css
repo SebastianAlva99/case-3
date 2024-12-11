@@ -201,3 +201,54 @@ li div.action{
     display: flex;
     justify-content: space-around;
 }
+
+.link-image {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 4px;
+}
+
+.link-content {
+    flex-grow: 1;
+}
+
+.link-content a {
+    display: block;
+    font-size: 1rem;
+    color: wheat;
+    text-decoration: none;
+}
+
+.link-content a:hover{
+    text-decoration: underline;
+}
+
+.link-content p {
+    margin: 0;
+    font-size:0.9rem;
+    color:#555;
+}
+
+
+.image-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.image-container img {
+    flex: 1;
+    max-width: 150px;
+    height: 200px;
+    
+}
+
+img {
+    margin-left: 95px;
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}

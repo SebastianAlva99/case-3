@@ -1,13 +1,30 @@
 const linkForm = document.querySelector("#linkForm");
 const linkList = document.querySelector("#linkList");
 
+const imgURLInput = document.getElementById("imageURL");
+const imgContainer = document.getElementById("imageContainer");
+
+
 linkForm.addEventListener('submit', function(e) {
     e.preventDefault();
 
     const linkText = document.querySelector("#linkText").value;
     const linkURL = document.querySelector("#linkURL").value;
+    const url = imgURLInput.value;
 
     const li = document.createElement("li");
+
+    if(url){
+        const img = document.createElement("img");
+        img.src = url;
+        img.alt = "Images"
+        img.className = "link-img"
+        li.appendChild(img);
+
+        imgURLInput.value = "";
+    }
+
+
     const a = document.createElement("a");
     a.href = linkURL;
     a.textContent = linkText;
@@ -15,6 +32,7 @@ linkForm.addEventListener('submit', function(e) {
 
     const action = document.createElement("div");
     action.className = "action";
+
 
     const favoriteButton = document.createElement('button');
     favoriteButton.textContent = "Favorite";
