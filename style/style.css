@@ -127,7 +127,7 @@ main {
 h1 {
     text-align: center;
     padding: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 form {
@@ -187,8 +187,7 @@ li a {
     color: black;
     display: flex;
     text-align: center;
-    margin: 10px;
-    margin-left: 14%;
+    flex-direction: column;
 
 }
 
@@ -251,4 +250,9 @@ img {
     border: 1px solid #000000;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
+

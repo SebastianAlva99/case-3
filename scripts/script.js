@@ -12,6 +12,7 @@ linkForm.addEventListener('submit', function(e) {
     const linkURL = document.querySelector("#linkURL").value;
     const url = imgURLInput.value;
 
+
     const li = document.createElement("li");
 
     if(url){
@@ -54,8 +55,28 @@ linkForm.addEventListener('submit', function(e) {
     li.remove();
     });
 
+    const moveUpButton = document.createElement("button");
+    moveUpButton.innerHTML = '<i class="fas fa-arrow-up"></i>'; // Icono de mover arriba
+    moveUpButton.addEventListener("click", function () {
+        const previousLi = li.previousElementSibling;
+        if (previousLi) {
+            linkList.insertBefore(li, previousLi); // Mover el enlace hacia arriba
+        }
+    });
+
+    const moveDownButton = document.createElement("button");
+    moveDownButton.innerHTML = '<i class="fas fa-arrow-down"></i>';
+    moveDownButton.addEventListener("click", function(){
+        const nextLink = li.nextElementSibling;
+        if(nextLink) {
+            linkList.insertBefore(nextLink,li);
+        }
+    })
+
     action.appendChild(favoriteButton);
     action.appendChild(deleteLänk);
+    action.appendChild(moveUpButton);
+    action.appendChild(moveDownButton);
 
     li.appendChild(a);
     li.appendChild(action);
