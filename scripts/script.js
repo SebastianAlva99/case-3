@@ -1,3 +1,5 @@
+// ---- hämtar element från DOM ----
+
 const linkForm = document.querySelector("#linkForm");
 const linkList = document.querySelector("#linkList");
 
@@ -12,7 +14,7 @@ linkForm.addEventListener('submit', function(e) {
     const linkURL = document.querySelector("#linkURL").value;
     const url = imgURLInput.value;
 
-
+// ---- skapa en img om det finns ----
     const li = document.createElement("li");
 
     if(url){
@@ -25,11 +27,14 @@ linkForm.addEventListener('submit', function(e) {
         imgURLInput.value = "";
     }
 
+// ---- skapa länk ----
 
     const a = document.createElement("a");
     a.href = linkURL;
     a.textContent = linkText;
     a.target ="_blank";
+
+// ---- SKAPAR ACTION BUTTON ----
 
     const action = document.createElement("div");
     action.className = "action";
@@ -49,11 +54,15 @@ linkForm.addEventListener('submit', function(e) {
         }
     });
 
+// ---- tabort button ----
+
     const deleteLänk = document.createElement("button");
     deleteLänk.innerHTML = '<i class="fas fa-trash"></i>';
     deleteLänk.addEventListener("click", function(){
     li.remove();
     });
+
+// ---- skapa up and down button ----
 
     const moveUpButton = document.createElement("button");
     moveUpButton.innerHTML = '<i class="fas fa-arrow-up"></i>'; 
