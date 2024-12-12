@@ -56,11 +56,11 @@ linkForm.addEventListener('submit', function(e) {
     });
 
     const moveUpButton = document.createElement("button");
-    moveUpButton.innerHTML = '<i class="fas fa-arrow-up"></i>'; // Icono de mover arriba
+    moveUpButton.innerHTML = '<i class="fas fa-arrow-up"></i>'; 
     moveUpButton.addEventListener("click", function () {
         const previousLi = li.previousElementSibling;
         if (previousLi) {
-            linkList.insertBefore(li, previousLi); // Mover el enlace hacia arriba
+            linkList.insertBefore(li, previousLi); 
         }
     });
 
